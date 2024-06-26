@@ -498,15 +498,6 @@ HRESULT WINAPI Hook_glDrawElements(GLenum mode, GLsizei count, GLenum type, cons
     */
 
     /*
-    //hold down P key until a texture is erased, press END to log values of those textures
-    if (GetAsyncKeyState('O') & 1) //-
-        countnum--;
-    if (GetAsyncKeyState('P') & 1) //+
-        countnum++;
-    if (GetAsyncKeyState(VK_MENU) && GetAsyncKeyState('9') & 1) //reset, set to -1
-        countnum = -1;
-
-    
     //log selected values
     if (countnum == count / 100)
         if (GetAsyncKeyState(VK_END) & 1) //press END to log to log.txt
