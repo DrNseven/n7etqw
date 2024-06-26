@@ -176,7 +176,7 @@ HRESULT WINAPI Hook_wglSwapBuffers(HDC hdc)
                     if (-EspPoint[i].z > 0)
                     ImGui::GetWindowDrawList()->AddLine({ EspPoint[i].x, EspPoint[i].y }, ImVec2(io.DisplaySize.x / 2, io.DisplaySize.y / 2 * (0)), IM_COL32(255, 255, 255, 255), 1.0f);//0up, 10middle, 20down
 
-                    //draw cricle
+                    //draw circle
                     if (esp == 1 && -EspPoint[i].z > 0)
                     ImGui::GetWindowDrawList()->AddCircle(ImVec2(EspPoint[i].x, EspPoint[i].y), 10000 / -EspPoint[i].z, IM_COL32(255, 0, 0, 255), 12, 2.0f); //scale with distance
                     else
