@@ -526,7 +526,7 @@ HRESULT WINAPI Hook_glDrawElements(GLenum mode, GLsizei count, GLenum type, cons
 //bool shaderfound = false;
 HRESULT WINAPI Hook_glBindTexture(GLenum target, GLuint texture)
 {
-    //get shader in quake engine games
+    //get shader in quake 3 engine games (not etqw)
     //__asm mov Shader, esi
     //if (Shader > 0x1000 && texture != NULL && Shader != NULL)
         //shaderfound = true;
